@@ -1,31 +1,21 @@
 
+// Main container Styling
 #main-content{
     background-color:white;
     color: black;
     overflow:hidden;
     height:93vh;
 }
+
+//SideNav Styling
 #sidenav{
     background-color: #3F0E40;
     font-size:16px;   
-    // overflow-x: hidden !important; 
 }
 
-.list{
-    color:#bcabbc;
-    // margin-left: .2%;
-    a{
-        color:#bcabbc;
-    }
-}
-.material-icons{
-    padding-left: 0px;
-  vertical-align:middle;
-}
-
+//Side nav header styling with hover effects
 .header{
     background-color: #3F0E40;
-    // position: -webkit-sticky;
     position: sticky;
     top: 0px;
     color:white;
@@ -47,6 +37,8 @@
     cursor:pointer;
     
 }
+
+//Scroll bar styling
 .header::-webkit-scrollbar {
     display: none;
   }
@@ -59,6 +51,7 @@
     overflow: hidden;
     white-space: nowrap;
 }
+//Header icon styling
 .compose-msg{
     width: 30px;
   height: 30px;
@@ -69,6 +62,12 @@
   margin-left: 80%; 
 }
 
+//Keyboard arrows styling with hover effects
+
+.material-icons{
+    padding-left: 0px;
+  vertical-align:middle;
+}
 .icon:hover{
     background-color: #532753;
     color:#bcabbc;
@@ -76,12 +75,22 @@
     border-radius: 20%;
 }
 
+//Menu list name
 .icon-name{
     font-size: 15px;
     line-height: 28px;
     margin-left:1%;
 }
 
+//Menu list styling
+.list{
+    color:#bcabbc;
+    a{
+        color:#bcabbc;
+    }
+}
+
+//Channel list menu
 .sidenav-channelList{
     display: flex;
     flex-direction: column;
@@ -95,15 +104,17 @@
     
     padding: 0%;
 }
-.item:hover{
-    background-color: #350d36;
-    .add{
-        visibility: visible;
-    }
-  }  
+ 
+//add icon styling
 .add{
     visibility: hidden;
     margin-left:20%;
     margin-left: auto;
 }
-
+//add icon to be visible on hover
+.item:hover{
+    background-color: #350d36;
+    .add{
+        visibility: visible;
+    }
+  } 
